@@ -1,0 +1,103 @@
+/* Typography Scale
+   Mobile:
+   - h1: 32px (2rem)
+   - h2: 24px (1.5rem)
+   - h3: 20px (1.25rem)
+   - body: 16px (1rem)
+   - small: 14px (0.875rem)
+
+   Desktop:
+   - h1: 48px (3rem)
+   - h2: 36px (2.25rem)
+   - h3: 24px (1.5rem)
+   - body: 16px (1rem)
+   - small: 14px (0.875rem)
+*/
+
+@layer base {
+  /* Base Typography */
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headings */
+  h1, .h1 {
+    @apply font-display text-[32px] leading-[1.2] tracking-tight font-bold text-gray-900 md:text-[48px];
+    margin-bottom: 0.5em;
+  }
+
+  h2, .h2 {
+    @apply font-display text-[24px] leading-[1.3] tracking-tight font-bold text-gray-900 md:text-[36px];
+    margin-bottom: 0.5em;
+  }
+
+  h3, .h3 {
+    @apply font-display text-[20px] leading-[1.4] font-semibold text-gray-900 md:text-[24px];
+    margin-bottom: 0.5em;
+  }
+
+  /* Body Text */
+  p, .body-lg {
+    @apply text-base leading-[1.75] text-gray-600 md:text-lg;
+    max-width: 65ch;
+  }
+
+  .body-base {
+    @apply text-base leading-[1.75] text-gray-600;
+    max-width: 65ch;
+  }
+
+  .body-sm {
+    @apply text-sm leading-[1.7] text-gray-600;
+    max-width: 65ch;
+  }
+
+  /* Section Headers */
+  .section-title {
+    @apply font-display text-[24px] leading-[1.3] tracking-tight font-bold text-gray-900 md:text-[36px];
+    margin-bottom: 1rem;
+  }
+
+  .section-description {
+    @apply text-lg leading-[1.75] text-gray-600 mx-auto max-w-[65ch];
+    margin-bottom: 2rem;
+  }
+
+  /* Feature Cards */
+  .feature-title {
+    @apply text-xl leading-[1.4] font-semibold text-gray-900;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-description {
+    @apply text-base leading-[1.75] text-gray-600;
+  }
+
+  /* Pricing Cards */
+  .price-title {
+    @apply text-2xl leading-[1.3] font-bold text-gray-900;
+    margin-bottom: 0.25rem;
+  }
+
+  .price-amount {
+    @apply text-4xl leading-[1.2] font-bold text-gray-900;
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply text-base font-medium text-gray-600 hover:text-gray-900;
+  }
+
+  /* Footer */
+  .footer-title {
+    @apply text-lg font-semibold text-white;
+    margin-bottom: 1rem;
+  }
+
+  .footer-text {
+    @apply text-sm leading-[1.7] text-gray-300;
+  }
+}
